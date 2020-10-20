@@ -1,69 +1,81 @@
-
-a{
+a {
     color: #ffffff;
     text-decoration: none;
 }
-@media screen and (min-width:750px){
-    body,li,p{
+
+@media screen and (min-width:750px) {
+
+    body,
+    li,
+    p {
         list-style: none;
         margin: 0;
         padding: 0;
     }
-    .main{
+
+    .main {
         background-image: url("../images/coral_pc.jpg");
         background-size: cover;
-        position:fixed;
+        position: fixed;
         top: 0;
-        left: 0;    
-        width:100%;
-        height:100%;
-        z-index:-10;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
         zoom: 1;
     }
-    .header{
+
+    .header {
         height: 60px;
         margin: 30px;
     }
-    .header-left{
+
+    .header-left {
         float: left;
         height: 100%;
     }
-    .header-left img{
+
+    .header-left img {
         height: 60px;
     }
-    .header-right{
+
+    .header-right {
         float: right;
         height: 100%;
     }
-    .header-right>ul{
+
+    .header-right>ul {
         display: flex;
         height: 60px;
     }
-    .header-right>ul>li{
+
+    .header-right>ul>li {
         flex: 1;
     }
-    .header-right>ul>li>img{
-        margin: 0 10px ;
+
+    .header-right>ul>li>a>img {
+        margin: 0 10px;
         height: 40px;
-    
+
     }
-    
-    .content{
+
+    .content {
         width: 70%;
         height: 100%;
         margin: 0 auto;
         text-align: center;
         margin-top: 100px;
     }
-    
-    .content-img{
-       height: 130px;
+
+    .content-img {
+        height: 130px;
     }
-    .content-imgs{
-       height: 130px;
+
+    .content-imgs {
+        height: 130px;
     }
-    
-    .content-btn{
+
+    .content-btn {
         width: 100%;
         /* margin-top: 180px; */
         margin: 50px 0;
@@ -73,37 +85,40 @@ a{
         bottom: 30%;
         width: 70%;
     }
-    .content-btn-rigth{
+
+    .content-btn-rigth {
         flex: 1;
         text-align: center;
     }
-    .content-btn-left{
+
+    .content-btn-left {
         flex: 1;
         text-align: center;
     }
-    
-    
-    .content-bottom{
+
+
+    .content-bottom {
         display: flex;
         position: absolute;
         bottom: 30px;
         width: 70%;
     }
-    
-    .content-bottom div{
+
+    .content-bottom div {
         flex: 1;
         color: #ffffff;
     }
-    
-    .content-bottom div ul li{
+
+    .content-bottom div ul li {
         text-align: left;
         padding: 5px 0;
     }
-    
-    .content-bottom-first{
+
+    .content-bottom-first {
         align-items: center;
     }
-    .content-bottom-first div{
+
+    .content-bottom-first div {
         height: 100px;
         width: 100%;
         position: relative;
@@ -111,31 +126,35 @@ a{
         top: 50%;
         display: flex;
     }
-    .content-bottom-first div .left{
+
+    .content-bottom-first div .left {
         flex: 3;
         font-size: 24px;
         font-weight: bold;
         color: #ffffff;
         line-height: 100px;
     }
-    .content-bottom-first div .right{
+
+    .content-bottom-first div .right {
         flex: 1;
     }
 
-    .content-bottom-first div .right img{
+    .content-bottom-first div .right img {
         height: 30px;
         margin: 35px 0;
     }
-    .content-bottom-twomax{
+
+    .content-bottom-twomax {
         border-right: 1px solid #ffffff;
     }
+
     /* .img-box{
         height: 70px;
     } */
     /* .img-box img{
         height: 55px;
     } */
-    .btn{
+    .btn {
         color: #ffffff;
         font-size: 24px;
         padding: 10px 20px;
@@ -146,97 +165,114 @@ a{
         margin-bottom: 2px;
         margin: 0 auto;
     }
+
     .li-icon>li {
-        list-style:disc;
-    }  
+        list-style: disc;
+    }
 }
 
 @media screen and (max-width: 750px) {
-    body,li,p{
+
+    body,
+    li,
+    p {
         list-style: none;
         margin: 0;
         padding: 0;
     }
-    .main{
+
+    .main {
         width: 100%;
         background-image: url("../images/coral_wap.PNG");
         background-size: cover;
-        position:fixed;
+        position: fixed;
         top: 0;
-        left: 0;    
-        width:100%;
-        height:100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
         min-width: 375px;
-        z-index:-10;
+        z-index: -10;
         zoom: 1;
     }
 
     .header {
         height: 40px;
-        margin:10px;
+        margin: 10px;
     }
-    .header-left{
+
+    .header-left {
         float: left;
         height: 100%;
     }
-    .header-left img{
+
+    .header-left img {
         height: 30px;
     }
 
-    .header-right{
+    .header-right {
         float: right;
         height: 100%;
     }
-    .header-right ul{
+
+    .header-right ul {
         display: flex;
-        margin: 8px 5px ;
+        margin: 8px 5px;
     }
-    .header-right ul li{
-        flex:1;
+
+    .header-right ul li {
+        flex: 1;
     }
-    .header-right ul li img{
+
+    .header-right ul li a img {
         height: 24px;
         margin: 0 3px;
     }
 
-    .content{
+    .content {
         margin-top: 50px;
         width: 100%;
     }
-    .content .cotent-img{
+
+    .content .cotent-img {
         width: 80%;
         margin: 0 auto;
         text-align: center;
     }
-    .content .cotent-img img{
+
+    .content .cotent-img img {
         height: 60px;
         padding-bottom: 20px;
         text-align: center;
     }
 
-    .content .content-btn{
+    .content .content-btn {
         width: 80%;
         margin: 0 auto;
         display: flex;
         color: #ffffff;
         padding: 10px 0;
     }
-    .content-btn-rigth{
+
+    .content-btn-rigth {
         flex: 1;
         text-align: center;
     }
-    .content-btn-left{
+
+    .content-btn-left {
         flex: 1;
         text-align: center;
     }
-    .img-box{
+
+    .img-box {
         height: 40px;
-        
+
     }
-    .img-box img{
+
+    .img-box img {
         height: 100%;
     }
-    .btn{
+
+    .btn {
         color: #ffffff;
         font-size: 16px;
         padding: 5px 10px;
@@ -248,37 +284,43 @@ a{
         margin: 0 auto;
         margin-top: 10px;
     }
-    .content-bottom{
+
+    .content-bottom {
         width: 80%;
         color: #ffffff;
         margin: 0 auto;
     }
-    .content-bottom div{
+
+    .content-bottom div {
         padding: 10px 0;
     }
-    .content-bottom-first1{
+
+    .content-bottom-first1 {
         height: 20px !important;
         display: flex;
         text-align: center;
     }
 
-    .content-bottom-first1 .left{
+    .content-bottom-first1 .left {
         flex: 3;
         font-size: 20px;
         font-weight: bold;
     }
-    .content-bottom-first1 .right{
+
+    .content-bottom-first1 .right {
         flex: 2;
     }
 
-    .content-bottom-two{
+    .content-bottom-two {
         border-bottom: 1px solid #ffffff;
         padding-bottom: 10px;
     }
-    .li-icon li{
+
+    .li-icon li {
         list-style: disc;
     }
-    .content-bottom div ul li{
+
+    .content-bottom div ul li {
         margin: 5px 0;
     }
 }
