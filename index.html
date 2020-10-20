@@ -10,6 +10,20 @@
 
 <body>
     <div class="main">
+
+
+        <div class="modal">
+            <div class="choose">
+                <div class="top">
+                    <img class="wechat" src="./images/wechat.jpg" alt="">
+                </div>
+                <div class="bottom" onclick="closemodal()">
+                    OK
+                </div>
+            </div>
+        </div>
+
+
         <div class="header">
             <div class="header-left">
                 <img src="./images/dex.png" alt="">
@@ -41,7 +55,7 @@
                             <img src="./images/medium.png" alt="">
                         </a>
                     </li>
-                    <li>
+                    <li onclick="wechat()">
                         <a href="#">
                             <img src="./images/wechat.png" alt="">
                         </a>
@@ -88,13 +102,15 @@
                 <div class="content-bottom-twomax">
                     <ul>
                         <li>
-                            Total Supply :10,000,000
+                            Total Supply : 10,000,000
                         </li>
                         <li>
-                            Today Output:5000
+                            Today Output: 5000
                         </li>
                         <li>
-                            Source Codr
+                            <a href="https://github.com/coral-dex">
+                                Source Code
+                            </a>
                         </li>
                         <li class="content-bottom-two">
                             Phase 丨 2020.10.15
@@ -120,6 +136,17 @@
             </div>
         </div>
     </div>
+    <script>
+        function wechat() {
+            var myDiv = document.getElementsByClassName("modal");
+            myDiv[0].setAttribute("class", "modalb");
+        }
+
+        function closemodal() {
+            var myDiv = document.getElementsByClassName("modalb");
+            myDiv[0].setAttribute("class", "modal");
+        }
+    </script>
 </body>
 
 </html>
