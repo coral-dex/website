@@ -5,13 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CORAL DEX</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/index.css">
+    <script>
+            window.onload=function(){
+               function getdata(){
+                $.ajax({
+                        type: "get",
+                        url: "https://api.coraldex.io/current",
+                        dataType: 'json', 
+                        success: function(data) { 
+                            $('.textnum').text(data);
+                        },
+                        error: function(xhr, type) {
+                        }
+                    });
+                }
+                getdata();
+            }
+    </script>
+
 </head>
 
 <body>
     <div class="main">
-
-
         <div class="modal">
             <div class="choose">
                 <div class="top">
@@ -105,7 +122,7 @@
                             Total Supply : 10,000,000
                         </li>
                         <li>
-                            Today Output: 5000
+                            Current Circulation: <span class="textnum">0</span>
                         </li>
                         <li>
                             <a href="https://github.com/coral-dex">
